@@ -1,0 +1,6 @@
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\_PRJ-SHUMEN-Programming Basics - 2017-01\00-Exercises\Day-4-CompexConditions-Ready\777-TEST\bin\Debug\777-TEST.exe.config
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\_PRJ-SHUMEN-Programming Basics - 2017-01\00-Exercises\Day-4-CompexConditions-Ready\777-TEST\bin\Debug\777-TEST.exe
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\_PRJ-SHUMEN-Programming Basics - 2017-01\00-Exercises\Day-4-CompexConditions-Ready\777-TEST\bin\Debug\777-TEST.pdb
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\_PRJ-SHUMEN-Programming Basics - 2017-01\00-Exercises\Day-4-CompexConditions-Ready\777-TEST\obj\Debug\777-TEST.csprojResolveAssemblyReference.cache
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\_PRJ-SHUMEN-Programming Basics - 2017-01\00-Exercises\Day-4-CompexConditions-Ready\777-TEST\obj\Debug\777-TEST.exe
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\_PRJ-SHUMEN-Programming Basics - 2017-01\00-Exercises\Day-4-CompexConditions-Ready\777-TEST\obj\Debug\777-TEST.pdb
