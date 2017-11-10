@@ -19,7 +19,7 @@ namespace _05_MaxNumber_SoftUni
                 if (num > max)
                     max = num;
                 }
-            Console.WriteLine("max = " + max);
+            Console.WriteLine("max = " + max);
             }
         }
     }
