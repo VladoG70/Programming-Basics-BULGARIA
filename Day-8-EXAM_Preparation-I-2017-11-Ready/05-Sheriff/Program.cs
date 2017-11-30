@@ -17,7 +17,7 @@ namespace _05_Sheriff
 
             for (int row = 0; row < n + 4; row++)
             {
-                // Vrah
+                // Top - PEAK
                 if (row == 0)
                 {
                     Console.WriteLine(new string('.', dots) + "x" + new string('.', dots));
@@ -37,7 +37,7 @@ namespace _05_Sheriff
                         }
                         else
                         {
-                            if (row > 2)
+                            if (row > 2 && xCount >= n)
                             {
                                 if (dots == 1)
                                 {
@@ -45,7 +45,10 @@ namespace _05_Sheriff
                                 }
 
                                 dots = (3 * n - 1) / 2 - xCount;
-                                Console.WriteLine(new string('.', dots) + new string('x', xCount) + "|" + new string('x', xCount) + new string('.', dots));
+                                if (xCount >= 0 && dots >= 0)
+                                {
+                                    Console.WriteLine(new string('.', dots) + new string('x', xCount) + "|" + new string('x', xCount) + new string('.', dots));
+                                }
 
                                 if (reward)
                                 {
@@ -59,10 +62,71 @@ namespace _05_Sheriff
                         }
                     }
                 }
+
                 if (row == n + 4 - 1)
                 {
                     dots = (3 * n - 2) / 2;
                     Console.WriteLine(new string('.', dots) + "/x\\" + new string('.', dots));
+                }
+            } // ROWS
+
+            // MIRROR ARROW
+            xCount = n;
+            reward = false;
+            for (int row = n + 3; row >= 0; row--)
+            {
+                if (row == n + 4 - 1)
+                {
+                    dots = (3 * n - 2) / 2;
+                    Console.WriteLine(new string('.', dots) + "\\x/" + new string('.', dots));
+                }
+
+                if (row == 0)
+                {
+                    dots = (3 * n - 1) / 2;
+                    Console.WriteLine(new string('.', dots) + "x" + new string('.', dots));
+                }
+                else
+                {
+                    if (row == 1)
+                    {
+                        Console.WriteLine(new string('.', dots) + "\\x/" + new string('.', dots));
+                    }
+                    else
+                    {
+                        if (row == 2)
+                        {
+                            dots = (3 * n - 1) / 2 - 1;
+                            Console.WriteLine(new string('.', dots) + "x|x" + new string('.', dots));
+                        }
+                        else
+                        {
+                            if (row > 2 && xCount >= n)
+                            {
+                                if (dots == 1)
+                                {
+                                    reward = true;
+                                }
+
+                                // Write
+                                dots = (3 * n - 1) / 2 - xCount;
+                                if (xCount >= 0 && dots >= 0)
+                                {
+                                    Console.WriteLine(new string('.', dots) + new string('x', xCount) + "|" +
+                                                      new string('x', xCount) + new string('.', dots));
+                                }
+
+                                if (reward)
+                                {
+                                    xCount--;
+                                }
+                                else
+                                {
+                                    xCount++;
+                                }
+                            }
+                        }
+                    }
                 }
             } // ROWS
 
